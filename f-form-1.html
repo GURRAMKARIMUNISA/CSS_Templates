@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        *
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.container{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    width:1200px;
+    height:300px;
+    background: linear-gradient(170deg, rgba(115,114,103,0.5185185185185186) 0%, rgba(86,96,150,1) 0%);
+}
+.sailor h2{
+    margin-top:-60px;
+}
+.Usefullinks h2{
+    margin-top:-80px;  
+}
+.Ourservices h2{
+    margin-top:-80px;  
+}
+.newsletter h2{
+    margin-top:-110px; 
+}
+ul li {
+    list-style:none;
+}
+li a{
+    text-decoration: none;
+}
+.sailor ul li{
+    display:inline-block;
+    padding:5px;
+}
+ul li a{
+ padding:10px;
+ color:rgb(44, 44, 102);
+}
+ul li i{
+    color:rgb(44, 44, 102);
+    font-size: 10px;
+}
+ul li a:hover{
+  color:rgb(149, 149, 222);
+}
+h2{
+   color:rgba(255, 255, 255, 0.945);
+    line-height:50px;
+    margin-top:5px;
+}
+.newsletter{
+    line-height: 30px;
+    color:white;
+}
+.copyright
+{   
+    position:absolute;
+    bottom:0px; 
+    width:100%;
+    height:auto;
+    padding:10px;
+    text-align:center;
+    background:rgb(100, 100, 197);
+}  
+.newsletter button{
+  color:rgb(237, 229, 229);
+  background-color: red;
+  border:none;
+}
+</style>
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <footer class="container">
+        <div class="sailor">
+           <h2>About Us</h2>
+           <address>A108 Adam Street<br>
+           NY 535022,USA
+           </address><br>
+          <b>Phone:</b>+155895548855<br>
+          <b>Email:</b>info@example.com<br>
+          <ul>
+            <li><i class="bi bi-twitter"></i></li>
+            <li><i class="bi bi-facebook"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+            <li><i class="bi bi-skype"></i></li>
+            <li><i class="bi bi-linkedin"></i></li>
+          </ul>
+        </div>
+        <div class="Usefullinks">
+            <h2>Useful Links</h2>
+        <ul>
+            <li><i class="bi bi-chevron-right"></i><a href="">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="">About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="">Terms of services</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="">Privacy Policy</a></li>
+        </ul>
+        </div>
+        <div class="Ourservices">
+            <h2>Our Services</h2>
+            <ul>
+                <li><i class="bi bi-chevron-right"></i><a href="">Web Design</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="">Web Development</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="">Product Management</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="">Marketing</a></li>
+                 <li><i class="bi bi-chevron-right"></i><a href="">Graphic Design</a></li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h2>Our NewsLetter</h2>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <input type="text" id="data"><button>Subscribe</button>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright&nbsp;<span style="font-weight: bold;">Sailor.</span> All Rights Reserved</p>
+            <p>Designed by BootstrapMade</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

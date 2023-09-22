@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    } 
+    .box img{
+       margin:60px 250px;
+       width:1000px;
+       position:relative;
+       z-index:1;
+    }
+    .face img{
+        position:absolute;
+        top:-25px;
+        left:450px;
+        border-radius:50%;
+        width:90px;
+        height:80px;
+    }
+    .content{
+        position:absolute;
+        top:150px;
+        left:450px;
+        text-align:center;
+        z-index:2;
+    }
+   .details{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-template-rows:auto auto auto auto auto;
+    row-gap:5px;
+    padding:30px;
+    background-color: aliceblue;
+    position:absolute;
+    top:280px;
+    left:450px;
+    z-index:3;
+    }
+    .copy{
+        position:absolute;
+        top:650px;
+        left:750px;
+        color:white;
+        z-index:4;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./ballon.jpg">
+        <div class="face"><img src="../ASSIGNMENTS/images/passport photo.jpg"></div>
+        <div class="content">
+           <h2>EMILY SMITH</h2>
+            <p>Travel influencer who starts her adventure and travels on social media and personal blog</p>
+        </div>
+        <div class="details">
+            <div class="access">
+                <div class="web">WEBSITE</div>
+                <div class="aff">AFFILIATE LINK</div>
+                <div class="con">CONTACT</div>
+            </div>
+            <div class="blog">MY TRAVEL BLOG</div>
+                <div class="channel">
+                    <div class="youtube">YOUTUBE</div>
+                    <div class="insta">INSTAGRAM</div>
+                     <div class="pinterest">PINTEREST</div>
+                     <div class="facebook">FACEBOOK</div>
+                     <div class="twitter">TWITTER</div>
+                </div>       
+        </div>
+        <div class="copy">Copyright 2023</div>
+    </div>   
+</body>
+</html>

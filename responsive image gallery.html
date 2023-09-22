@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responive image Gallery</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            border-size:border-box;
+        }
+        .container{
+            background-color:azure;
+            width:100%;
+        }
+        .container .row{
+          
+            padding:80px 50px 0px 80px;
+            display:flex;
+            gap:30px;
+            justify-content:center;
+        }
+        .row a{
+           padding:10px 10px;
+           background-color: white;
+           color:blue;
+           border:2px solid blue;
+           text-decoration:none;
+        }
+        .all:link,.all:visited{
+            background-color: rgb(115, 115, 235);
+            color:blue;
+        }
+        a:hover{
+            background-color:rgb(125, 125, 210);
+        }
+        .pics img{
+            margin-top:5x;
+            width:200px;
+            height:150px;
+            border:5px solid rgb(205, 202, 202);
+            
+        }
+        .pics{
+            display:grid;
+            grid-template-columns:repeat(3,minmax(200px,1fr));
+            grid-template-rows: repeat(2,minmax(200px,1fr));
+            padding:5% 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div><a class="all" href="">All</a></div>
+            <div><a href="">WATCH</a></div>
+            <div><a href="">HEADPHONE</a></div>
+            <div><a href="">CAMERA</a></div>
+            <div><a href="">PHONE</a></div>
+        </div>
+        <div class="pics">
+            <img src="../ASSIGNMENTS/images/shoe.jpeg">
+            <img src="../ASSIGNMENTS/images/headset.avif">
+            <img src="../ASSIGNMENTS/images/camera.jpeg">
+            <img src="../ASSIGNMENTS/images/headset black.jpeg">
+            <img src="../ASSIGNMENTS/images/iphone.jpeg">
+            <img src="../ASSIGNMENTS/images/tab.jpeg">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .map{
+           grid-area: m;
+        }
+        .details{
+            grid-area:d;
+        }
+        .enter{
+            grid-area:i;
+        }
+        .info{
+           display:grid;
+           grid-template-areas: 'm m m m m m m' 'd d i i i i i';
+           column-gap:5px;
+           padding:30px;
+           row-gap:30px;
+        }
+        .parent h2{
+            margin-top:20px;
+        }
+        .parent{
+            padding:5% 20%;
+        }
+        .parent h2,p{
+            text-align:center;
+        }
+        .parent p{
+            margin-top:20px;
+            padding:0px 250px;
+        }
+        .parent h2 span{
+            color:red;
+        }
+        .details i{
+            font-size:1.1rem;
+            color:rgb(241, 100, 225);
+            width:30px;
+            height:30px;
+            text-align: center;
+            border-radius:50%;
+            background-color: rgb(255, 227, 254);
+        }
+        .details .sec{
+            display:flex;
+            flex-direction: row;
+            gap:20px;
+          line-height:30px;
+        }
+        .bk h6{
+         padding:2px 30px;
+        }
+        .enter input{
+            padding:10px;
+            width:40%;
+            
+        }
+        .enter button{
+            color:white;
+            background-color: rgb(215, 58, 58);
+            padding:10px;
+            text-align: center;
+            border:none;
+            margin-left: 300px;
+            border-radius:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h2>Contact <span>Us</span></h2>
+        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at volupitas atque vitae autem.</p>
+        <div class="info">
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d121807.94259956652!2d78.446592!3d17.4358528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1695210946263!5m2!1sen!2sin" width="900" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>  
+                <div class="details">
+                  <div class="bk">
+                     <div class="address sec"><i class="bi bi-geo-alt"></i><h4>Location:</h4></div><br>
+                     <h6>A108 Adam Street,NewYork NY 535022</h6>
+                  </div>
+                  <div class="bk">
+                    <div class="em sec"><i class="bi bi-envelope"></i><h4>Email</h4></div><br>
+                    <h6>info@example.com</h6>
+                  </div>
+                  <div class="bk">
+                    <div class="ph sec"><i class="bi bi-phone"></i><h4>Call:</h4></div><br>
+                    <h6>+1&nbsp;5589&nbsp;55488&nbsp;55s</h6>
+                  </div>
+                </div>
+                <div class="enter">   
+                    <div class="data">
+                      <input type="text" size="20" placeholder="Your Name">
+                      <input type="text"size="20" placeholder="Your Email">
+                    </div>         
+                    <div class="sub">
+                      <input type="text"size="30" palceholder="Subject">
+                    </div>
+                    <div class="message">
+                     <textarea rows="5" cols="100" placeholder="Message"></textarea>
+                    </div>
+                    <button>Send Message</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
